@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar page">
+      <div class="nav-center">
+        <!-- links -->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link"> home </a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link"> products </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link"> about </a>
+            </li>
+          </ul>
+        </div>
+        <!-- logo -->
+        <img
+          src="images/svg_20230729_213951_0000.svg"
+          class="nav-logo"
+          alt="logo"
+          width="350px"
+        />
+        <!-- cart -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+      <div class="loginicon">
+        <button class="toggle-cart" onclick="window.open('test.html')">
+          <i class="fas fa-user"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / Single Product</h3>
+      </div>
+    </section>
+    <!-- sidebar -->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <!-- close -->
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>
+              home
+            </a>
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>
+              products
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"></i>
+              about
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- cart -->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items"></div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">total : $12.99</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <!-- product info -->
+    <section class="single-product">
+      <div class="section-center single-product-center">
+        <img
+          src="./images/main-bcg.jpeg"
+          class="single-product-img img"
+          alt=""
+        />
+        <article class="single-product-info">
+          <div>
+            <h2 class="single-product-title">couch</h2>
+            <p class="single-product-company text-slanted">by marcos</p>
+            <p class="single-product-price">$30.00</p>
+            <div class="single-product-colors"></div>
+            <p class="single-product-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+              modi? Minima libero doloremque necessitatibus! Praesentium
+              recusandae quod nesciunt animi voluptatem!
+            </p>
+            <button class="addToCartBtn btn" data-id="id">add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="hm-footer-details">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Our Pages</h3>
+                </div>
+                <div class="hm-foot-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title"></div>
+                <div class="hm-foot-menu">
+                  <h3>Here To Help</h3>
+                  <p>
+                    Have a question? You may find an <br />
+                    answer in our FAQs. But you can also contact us:
+                  </p>
+                  <h3>Order by phone</h3>
+                  <p>Available everyday</p>
+                  <p>(+20) 1598886595</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Customer Service</h3>
+                </div>
+                <div class="hm-foot-menu">
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Email Us</h3>
+                </div>
+                <div class="hm-foot-para">
+                  <p>Get in touch by email</p>
+                </div>
+                <div class="hm-foot-email">
+                  <div class="foot-email-box">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Email Here...."
+                    />
+                  </div>
+                  <div class="foot-email-subscribe">
+                    <span><i class="fa fa-location-arrow"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer start-->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="hm-footer-copyright text-center">
+          <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+          </div>
+          <p>&copy;Copyright 2023. All Rights Reserved. Design By Team1-ITI</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <div class="page-loading">
+      <h2>loading...</h2>
+    </div>
+    <script type="module" src="./src/pages/product.js"></script>
+  </body>
+</html>

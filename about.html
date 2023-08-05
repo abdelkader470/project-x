@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar page">
+      <div class="nav-center">
+        <!-- links -->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+        <!-- logo -->
+        <img
+          src="images/svg_20230729_213951_0000.svg"
+          class="nav-logo"
+          alt="logo"
+          width="350px"
+        />
+        <!-- cart -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+      <div class="loginicon">
+        <button class="toggle-cart" onclick="window.open('test.html')">
+          <i class="fas fa-user"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / About</h3>
+      </div>
+    </section>
+    <!-- sidebar -->
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- Links -->
+        <ul class="sidebar-links">
+          <li>
+            <i class="fas fa-home fa-fw"></i>
+            <a href="index.html" class="sidebar-link">Home</a>
+          </li>
+          <li>
+            <i class="fas fa-couch fa-fw"></i>
+            <a href="products.html" class="sidebar-link">Products</a>
+          </li>
+          <li>
+            <i class="fas fa-book fa-fw"></i>
+            <a href="about.html" class="sidebar-link">About</a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h1 class="text-slanted">Your Bag</h1>
+        </header>
+        <div class="cart-items">
+          <article class="cart-item">
+            <div>
+              <img
+                src="images/main-bcg.jpeg"
+                alt="name"
+                class="cart-item-img"
+              />
+            </div>
+            <!-- item info -->
+            <div>
+              <h4 class="cart-item-name">high-back bench</h4>
+              <p class="cart-item-price">$13.99</p>
+              <button class="cart-item-remove-btn">remove</button>
+            </div>
+            <div>
+              <button class="cart-item-increase-btn">
+                <i class="fas fa-chevron-up"></i>
+              </button>
+              <p class="cart-item-amount">1</p>
+              <button class="cart-item-decrease-btn">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <footer>
+          <h3 class="cart-total text-slanted">Total : $12.99</h3>
+          <button class="cart-checkout btn">check out</button>
+        </footer>
+      </aside>
+    </div>
+    <section class="section section-center about-page">
+      <div class="title">
+        <h2><span>/</span>Our History</h2>
+      </div>
+      <div class="about-info">
+        <div class="row">
+          <div class="about-img">
+            <img src="images/about.jpg" alt="" />
+          </div>
+          <p class="about-text">
+            Our company was founded in 2023 by a group of young designers who
+            were passionate about creating modern, affordable furniture. They
+            started out with a small line of minimalist furniture, including
+            tables, chairs, and sofas, that quickly gained popularity among
+            design enthusiasts. In 2023, we launched an online store and began
+            shipping our furniture all over the world. We also expanded our
+            product line to include home decor items, such as wall art and
+            lighting, which helped to attract a wider audience. Today, our
+            company continues to grow and thrive, thanks to our commitment to
+            innovation, affordability, and sustainability. We remain dedicated
+            to providing our customers with beautiful, functional furniture that
+            enhances their homes and lives, while also making a positive impact
+            on the environment.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--newsletter strat -->
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="hm-footer-details">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Our Pages</h3>
+                </div>
+                <div class="hm-foot-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title"></div>
+                <div class="hm-foot-menu">
+                  <h3>Here To Help</h3>
+                  <p>
+                    Have a question? You may find an <br />
+                    answer in our FAQs. But you can also contact us:
+                  </p>
+                  <h3>Order by phone</h3>
+                  <p>Available everyday</p>
+                  <p>(+20) 1598886595</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Customer Service</h3>
+                </div>
+                <div class="hm-foot-menu">
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Email Us</h3>
+                </div>
+                <div class="hm-foot-para">
+                  <p>Get in touch by email</p>
+                </div>
+                <div class="hm-foot-email">
+                  <div class="foot-email-box">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Email Here...."
+                    />
+                  </div>
+                  <div class="foot-email-subscribe">
+                    <span><i class="fa fa-location-arrow"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer start-->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="hm-footer-copyright text-center">
+          <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+          </div>
+          <p>&copy;Copyright 2023. All Rights Reserved. Design By Team1-ITI</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script type="module" src="./src/pages/about.js"></script>
+  </body>
+</html>
